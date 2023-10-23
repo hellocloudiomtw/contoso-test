@@ -1,6 +1,7 @@
-###  
+# Contoso corporation is planning to lauch "Meow App" to expand their pet food business through digital transformation.
+# As discussed in the meeting, contoso's CTO wants to leverage their application in the cloud and using automation practice to offload the burdens of operation matters over time.
+# HelloCloud awarded the tender for this project and proposed to leverage terraform cloud and AWS for the infrastructure automation.
  
-
  ## procedure
  1. Create Github repo: (test,dev,prod)
  2. Terraform Cloud : Create Organization (test,dev,prod)
@@ -24,15 +25,26 @@
 
     ### github testing
 
-    git clone git@github.com:hellocloudiomtw/contoso-test.git contoso-test
-    cd hashicat-aws-bca-github-testing
-    git remote rm origin
-    gh repo create hashicat-aws-bca-hellocloudiomtw --private --source=. --remote=upstream --push
+    ### Enter file in which to save the key (/home/vagrant/.ssh/id_rsa): github.com.contoso-test
 
     eval "$(ssh-agent -s)"
     ssh-add ~/.ssh/github.com.contoso-test
     ssh -T git@github.com
 
+    git clone git@github.com:hellocloudiomtw/contoso-test.git contoso-test
+    cd contoso-test
+    git remote -v
+    git status
+    git log
+    git commit -am "updated README file"
+    git push
 
-Enter file in which to save the key (/home/vagrant/.ssh/id_rsa): github.com.contoso-test
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/github.com.contoso-test
+    ssh -T git@github.com
+
+   
+
+
+
     
