@@ -19,9 +19,9 @@
     4.3 Create workspace (TFC)
         Version Control Workflow > Choose Organization > Choose the correct Repo > Advanced options (choose Auto apply)
     4.6 Configure environment variable for AWS access key and secret access key (TFC)
-        AWS_ACCESS_KEY_ID : xxxxxxxx
+        AWS_ACCESS_KEY_ID : xxxxxxxx  (select case sensitive)
         AWS_SECRET_ACCESS_KEY : xxxxxxx
-    4.7 
+    4.7 Configure terraform VS code
 
     ### github testing
 
@@ -38,11 +38,6 @@
     git log
     git commit -am "updated README file"
     git push
-
-    eval "$(ssh-agent -s)"
-    ssh-add ~/.ssh/github.com.contoso-test
-    ssh -T git@github.com
-
    
 
 
