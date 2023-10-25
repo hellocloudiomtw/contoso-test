@@ -24,7 +24,7 @@
     4.7 Configure terraform VS code
 
     ### github testing
-
+    ssh-keygen -t rsa -b 4096 -C "maythuwin.edu@gmail.com"
     ### Enter file in which to save the key (/home/vagrant/.ssh/id_rsa): github.com.contoso-test
 
     eval "$(ssh-agent -s)"
